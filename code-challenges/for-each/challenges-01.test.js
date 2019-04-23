@@ -156,14 +156,18 @@ const fizzbuzz = (arr) => {
   // Solution code here...
   let output = [];
   arr.forEach((num) => {
-    if(num % 3 === 0 && num % 5 === 0){
-      output.push('Fizz Buzz');
-    } else if(num % 3 === 0){
-      output.push('Fizz');
-    } else if(num % 5 === 0){
-      output.push('Buzz');
-    } else {
-    output.push(num);
+    switch(true) {
+      case num % 3 === 0 && num % 5 === 0:
+        output.push('Fizz Buzz');
+        break;
+      case num % 3 === 0:
+        output.push('Fizz');
+        break;
+      case num % 5 === 0:
+        output.push('Buzz');
+        break;
+      default:
+        output.push(num)
     }
   })
   return output;
