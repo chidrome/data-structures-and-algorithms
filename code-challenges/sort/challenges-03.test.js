@@ -24,6 +24,7 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
+  return arr.sort();
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -34,6 +35,8 @@ Write a function named sortByLength that takes in an array of strings and return
 
 const sortByLength = (arr) => {
   // Solution code here...
+  arr.sort( (a, b) => { return a.length - b.length })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +49,10 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
+  arr.sort( (a, b) => {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,6 +70,10 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
+  arr.sort( (a, b) => {
+    return a.price - b.price
+  })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,7 +86,10 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 
 const sortNumbersByLength = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => { return a.toString().length - b.toString().length})
+  return arr;
 };
+
 
 /*-----------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -97,6 +111,10 @@ const people = [
 
 const sortPeople = (arr) => {
   // Solution code here...
+  arr.sort( (a, b)=> {
+    return a.lastName.toLowerCase().localeCompare(b.lastName.toLowerCase());
+  })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,6 +129,10 @@ If two people have the same full name, the younger one should come first. Do not
 
 const sortPeopleBetter = (arr) => {
   // Solution code here...
+  arr.sort( (a, b) => {
+    return a.lastName.localeCompare(b.lastName) || a.firstName.localeCompare(b.firstName) || a.age - b.age
+  })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -137,6 +159,11 @@ const meetings = [
 
 const sortMeetingsByDay = (arr) => {
   // Solution code here...
+  let sortedDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+  arr.sort((a,b) => {
+    return sortedDays.indexOf(a.dayOfWeek) > sortedDays.indexOf(b.dayOfWeek)
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -151,6 +178,9 @@ You DO NOT need to use your solution to Challenge 9 in completing Challenge 10.
 
 const sortSchedule = (arr) => {
   // Solution code here...
+  arr.sort((a,b) => {
+    return sortedDays.indexOf(a.dayOfWeek) > sortedDays.indexOf(b.dayOfWeek) || a.start - b.start || (a.start - a.end) - (b.start - b.end);
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
