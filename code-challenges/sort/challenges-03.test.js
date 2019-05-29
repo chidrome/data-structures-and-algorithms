@@ -114,7 +114,9 @@ const sortPeople = (arr) => {
   arr.sort( (a, b)=> {
     return a.lastName.toLowerCase().localeCompare(b.lastName.toLowerCase());
   })
+  console.log(arr);
   return arr;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
