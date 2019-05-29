@@ -4,7 +4,41 @@
 package array_shift;
 
 public class Library {
-    public boolean someLibraryMethod() {
-        return true;
+    public int[] arrayShift(int[] inputArray, int numToInsert){
+        // declare a new result array
+        int[] result = new int[inputArray.length + 1];
+
+        // declare the middle index variable
+        int mid;
+
+        // handle edge cases
+        // if array is empty or just has one number
+        if(inputArray.length == 0){
+            return new int[]{numToInsert};
+        }
+        else if( inputArray.length == 1){
+            result = new int[]{inputArray[0], numToInsert};
+            return result;
+        }
+
+        // handle middle index based on odd or even arrays
+        // if odd then middle index will be to the right
+        if (inputArray.length % 2 == 0){
+            mid = (inputArray.length /2);
+        } else {
+            mid = (inputArray.length + 1) / 2;
+        }
+
+        // loop through the array and add the value to the middle index
+        for(int i = 0; i < result.length; i++){
+            if(i < mid){
+                result[i] = inputArray[i];
+            } else if (i == mid){
+                result[mid] = numToInsert;
+            } else {
+                result[i] = inputArray[i - 1];
+            }
+        }
+        return result;
     }
 }
