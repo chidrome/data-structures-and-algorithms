@@ -7,8 +7,42 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test
+    public void shiftArray_testEvenIndexArray() {
+        Library arrayShiftMethod = new Library();
+
+        int[] inputArray = new int[]{1, 2, 4, 5};
+        int[] expectedArr = new int[]{1, 2, 3, 4, 5};
+
+        assertArrayEquals("Test even indexed array",
+                expectedArr,
+                arrayShiftMethod.arrayShift(inputArray, 3));
+    }
+
+    @Test
+    public void shiftArray_testOddIndexArray() {
+        Library arrayShiftMethod = new Library();
+
+        int[] inputArray = new int[]{1, 5, 7, 9, 10};
+        int[] expectedArr = new int[]{1, 5, 7, 3, 9, 10};
+
+        assertArrayEquals("Test even indexed array",
+                expectedArr,
+                arrayShiftMethod.arrayShift(inputArray, 3));
+    }
+
+    @Test
+    public void shiftArray_singleIndexArray(){
+        Library arrayShiftMethod = new Library();
+
+        int[] inputArray = new int[]{1};
+        int[] expectedArr = new int[]{1, 3};
+
+        assertArrayEquals("Test single indexed array",
+                expectedArr,
+                arrayShiftMethod.arrayShift(inputArray,3));
+
+
     }
 }
+
