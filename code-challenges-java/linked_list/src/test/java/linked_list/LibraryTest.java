@@ -6,6 +6,8 @@ package linked_list;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
+import org.w3c.dom.Node;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,7 @@ public class LibraryTest {
     public void init() {
         testList = new Library();
     }
+
 
     @Test
     public void emptyInitiatedList() {
@@ -44,5 +47,16 @@ public class LibraryTest {
     @Test
     public void returnEmptyList() {
         assertEquals("Empty list", "[]", testList.print().toString());
+    }
+
+    @Test
+    public void testInsertBeforeFirstNode(){
+        emptyInitiatedList();
+        List<Integer> result = new ArrayList<>();
+        result.add(1);
+        result.add(3);
+        testList.insertBefore(3, 2);
+        System.out.println(result);
+
     }
 }

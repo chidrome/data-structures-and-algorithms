@@ -9,6 +9,7 @@ import java.util.List;
 public class Library {
     Node head;
 
+
     private static class Node{
         // value
         int value;
@@ -56,6 +57,58 @@ public class Library {
         }
 
         return nodeList;
+    }
+
+    void append(int value) throws AssertionError{
+        Node current = head;
+
+        if(head == null){
+            current = new Node(value, null);
+            head = current;
+        }
+        else{
+            current = head;
+
+            while (current.next != null) {
+                current = current.next;
+            }
+            Node newNode = new Node(value,  head);
+            current.next = newNode;
+        }
+    }
+
+    void insertBefore(int value, int newVal) throws NullPointerException{
+        Node current = head;
+
+        if(head.value == value ){
+            head = new Node(newVal, null);
+        }
+        else{
+            current = head;
+
+            while(current.next.value != value){
+                current = current.next;
+            }
+            Node newNode = new Node(newVal, head);
+            newNode.next = current.next;
+            current.next = newNode;
+        }
+    }
+
+    void insertAfter(int value, int newValue) throws NullPointerException{
+        Node current = head;
+
+        while(current.value != value){
+            current = current.next;
+        }
+
+        Node newNode = new Node(newValue, null);
+        newNode.next = current.next;
+        current.next = newNode;
+
+        if(current.next ==  null){
+            current = new Node(newValue, head);
+        }
     }
 
 }
