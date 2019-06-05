@@ -59,4 +59,15 @@ public class LibraryTest {
         System.out.println(result);
 
     }
+
+    @Test
+    public void testKthValue(){
+        testList.append(1);
+        testList.append(3);
+        testList.append(5);
+        testList.append(20);
+        testList.append(11);
+
+        assertEquals("Should return the kth value.", 5, testList.getKthValue(2));
+    }
 }

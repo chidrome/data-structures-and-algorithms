@@ -111,4 +111,28 @@ public class Library {
         }
     }
 
+    public int getKthValue(int value){
+        Node current = head;
+
+        // get the size of the linked list
+        int size=0;
+        while(current.next != null) {
+            size++;
+        }
+
+        if(value < 0 || value >= size){
+            throw new IllegalArgumentException("Invalid kth value.");
+        }
+
+        int position = size - value;
+        int ctr = 1;
+
+        while(ctr < position && current != null){
+            current = current.next;
+            ctr++;
+        }
+
+        return current.value;
+
+    }
 }

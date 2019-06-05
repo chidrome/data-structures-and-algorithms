@@ -7,8 +7,15 @@ Create a linked list with a head node that has values and points to the next nod
 ## Approach & Efficiency
 I created a constructor node with the properties for the value and next. Instantiate the head node then create the pointer values for the next node in the list. Once that new node gets created then set the head node to be that newly created node. While the very first node created will point to null.
 
+
 Time complexity is O(1).
 Space complexity is O(1).
+
+**getKthValue**
+* Time is O(n)
+* Space is O(1)
+
+
 
 ## API
 Insert() - Takes in a value as an arguement and adds a new node with that value to the head of the list.
@@ -23,6 +30,7 @@ InsertAfter()
 
 Append()
 
+getKthValue()
 
 
 ## Solution
@@ -32,3 +40,6 @@ Append()
 [Link to Test Code](./src/test/java/linked_list/LibraryTest.java)
 
 ![WB](./assets/LL_insertion_WB.jpg)
+
+**Get KthValue WB**
+![KthValueWB](./assets/getKthValue_WB.jpg)
