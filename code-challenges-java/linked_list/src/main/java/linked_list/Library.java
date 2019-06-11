@@ -135,4 +135,66 @@ public class Library {
         return current.value;
 
     }
+
+
+    public void push(int value){
+        Node newNode = new Node(value);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    private Node first = null;
+
+    public int pop(){
+        Node oldNode = first;
+        first = first.next;
+        return oldNode.value;
+
+    }
+
+    boolean isEmpty() {
+        return first == null;
+    }
+
+    // Stack class
+//    public static class Stack{
+//        Node head;
+//
+//        public void push(int value){
+//            Node newNode = new Node(value);
+//            newNode.next = head;
+//            head = newNode;
+//        }
+//
+//        private Node first = null;
+//
+//        public int pop(){
+//            Node oldNode = first;
+//            first = first.next;
+//            return oldNode.value;
+//
+//        }
+//
+//        boolean isEmpty() {
+//            return first == null;
+//        }
+//
+//        @Override
+//        public String toString() {
+//            StringBuilder builder = new StringBuilder();
+//            Node current = first;
+//            while (current != null) {
+//                builder.append(current).append(" ");
+//                current = current.next;
+//            }
+//            return builder.toString();
+//        }
+//
+//    }
+
+
+//    // Queue class
+//    private static Queue{
+//
+//    }
 }
