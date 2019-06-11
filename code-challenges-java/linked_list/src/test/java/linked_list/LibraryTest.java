@@ -70,4 +70,15 @@ public class LibraryTest {
 
         assertEquals("Should return the kth value.", 5, testList.getKthValue(2));
     }
+
+    @Test
+    public void testPushAndPop() {
+        testList.push(50);
+        testList.push(70);
+        testList.push(190);
+        System.out.println(testList);
+//        assertEquals("190 70 50", testList.toString());
+//        assertEquals(190, (int) testList.pop());
+//        assertEquals("70 50", testList.toString());
+    }
 }
