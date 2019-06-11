@@ -13,12 +13,12 @@ public class PseudoQueue {
         outputStack = new Stack();
     }
 
-    public void enqueue(int value){
+    public void enQueue(int value){
         //add to the input stack
         inputStack.push(value);
     }
 
-    public int dequeue(){
+    public int deQueue(){
         int result = -1;
         if(inputStack != null) {
             copyStack(inputStack, outputStack);
