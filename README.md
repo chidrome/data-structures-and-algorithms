@@ -9,3 +9,5 @@
 4. [Linked List](./code-challenges-java/linked_list)
 5. [Linked List Insertion](./code-challenges-java/linked_list)
 6. [Linked List getKthValue](./code-challenges-java/linked_list)
+7. [Stack and Queue](./code-challegnes-java-.stack_and_queue)
+8. [Queue with Stacks](./code-challenges-java/queue_with_stacks)
