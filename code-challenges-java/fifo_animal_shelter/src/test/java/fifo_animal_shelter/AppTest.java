@@ -29,19 +29,5 @@ public class AppTest {
 
         assertEquals("Should return null", null, shelter.dequeue());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
