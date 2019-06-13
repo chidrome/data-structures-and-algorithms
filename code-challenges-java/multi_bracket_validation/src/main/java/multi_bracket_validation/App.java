@@ -3,6 +3,9 @@
  */
 package multi_bracket_validation;
 
+import java.util.HashMap;
+import java.util.Stack;
+
 public class App {
     private static HashMap<Character, Character> brackets = new HashMap<>();
 
