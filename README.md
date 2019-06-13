@@ -12,3 +12,4 @@
 7. [Stack and Queue](./code-challegnes-java-.stack_and_queue)
 8. [Queue with Stacks](./code-challenges-java/queue_with_stacks)
 9. [FIFO Animal Shelter](./code-challenges-java/fifo_animal_shelter)
+10. [Multi Bracket Validation](./code-challenges-java/multi_bracket_validation)
