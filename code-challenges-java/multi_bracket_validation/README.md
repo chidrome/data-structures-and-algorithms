@@ -22,7 +22,7 @@ initializeBrackets()
 
 ## Solution
 
-[Link to Code](./src/main/java/multi_bracket_validation/AnimalShelter.java)
+[Link to Code](./src/main/java/multi_bracket_validation/App.java)
 
 [Link to Test Code](./src/test/java/multi_bracket_validation/AppTest.java)
 
