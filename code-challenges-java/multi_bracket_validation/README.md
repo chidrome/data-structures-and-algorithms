@@ -1,8 +1,8 @@
-# FIFO Animal Shelter
+# Multi Bracket Validation
 
 
 ## Challenge Description
-Validate brackets ({}, (), []) if balanced or not. Paired with Liz Mahoney.
+Validate brackets ({}, (), []) if balanced or not.
 
 ## Approach & Efficiency
 * The approach is to put the open brackets to the stack while traversing the character array. If the character is  the closing bracket, check the stack if it is the corresponding pair. To determine if it is the correct pair, the HashMap is utilized. 
