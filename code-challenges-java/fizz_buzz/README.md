@@ -2,7 +2,8 @@
 
 
 ## Challenge Description
-* Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+* Write a function called FizzBuzzTree which takes a tree as an argument.
+* Without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes.
 
 ## Big O
 * Time is O(n)
