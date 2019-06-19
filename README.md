@@ -14,3 +14,4 @@
 9. [FIFO Animal Shelter](./code-challenges-java/fifo_animal_shelter)
 10. [Multi Bracket Validation](./code-challenges-java/multi_bracket_validation)
 11. [Binary Search Tree](./code-challenges-java/binary_tree_and_bst_implementation)
+12. [FizzBuzz](./code-challenges-java/breadth_first)

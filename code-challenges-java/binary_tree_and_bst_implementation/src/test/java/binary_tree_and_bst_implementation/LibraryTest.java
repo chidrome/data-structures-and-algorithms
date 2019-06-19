@@ -9,6 +9,6 @@ import static org.junit.Assert.*;
 public class LibraryTest {
     @Test public void testSomeLibraryMethod() {
         BinarySearchTree classUnderTest = new BinarySearchTree();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+        assertTrue("someLibraryMethod should return 'true'", classUnderTest.yes());
     }
 }
