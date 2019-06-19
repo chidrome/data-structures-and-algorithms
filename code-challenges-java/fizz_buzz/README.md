@@ -11,7 +11,7 @@
 
 ## Solution
 
-[Link to Code](./src/main/java/breadth_first/FizzBuzz.java)
+[Link to Code](src/main/java/fizz_buzz/FizzBuzz.java)
 
 [Link to Test Code](./src/test/java/breadth_first/AppTest.java)
 
