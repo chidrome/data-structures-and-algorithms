@@ -15,4 +15,5 @@
 10. [Multi Bracket Validation](./code-challenges-java/multi_bracket_validation)
 11. [Binary Search Tree](./code-challenges-java/binary_tree_and_bst_implementation)
 12. [FizzBuzz](./code-challenges-java/fizz_buzz)
-13. [Breadth First](code-challenges-java/breadth)
+13. [Breadth First](./code-challenges-java/breadth)
+14. [Find Maximum Binary Tree](./code-challenges-java/find_maximum_binary_tree)
