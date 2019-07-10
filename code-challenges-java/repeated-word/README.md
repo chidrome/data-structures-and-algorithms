@@ -10,7 +10,7 @@ Space complexity is O(n).
 
 
 ## Solution
-[Link to Code](./src/main/java/repeated/word/Repeated_Word.java)
+[Link to Code](./src/main/java/repeated/word/RepeatedWord.java)
 
 [Link to Test Code](./src/test/java/repeated/word/AppTest.java)
 
