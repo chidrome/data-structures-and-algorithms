@@ -5,6 +5,7 @@ package left_join;
 
 import com.sun.jdi.Value;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,7 +20,20 @@ public class LeftJoin {
         for (Map.Entry<String, String> e : antonym.entrySet())
             resultMap.merge(e.getKey(), e.getValue(), String::concat);
 
+        // TODO: need an iterator to compare keys
+
         return resultMap;
+    }
+
+
+    private int maxValue(ArrayList<Integer> array){
+        int value = array.get(0);
+        for(int v : array){
+            if(v < value){
+                value = v;
+            }
+        }
+        return value;
     }
 
 }
