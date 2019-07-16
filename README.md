@@ -19,4 +19,4 @@
 * [Find Maximum Binary Tree](./code-challenges-java/find_maximum_binary_tree)
 * [Repeated Word](./code-challenges-java/repeated-word)
 * [Left Join](./code-challenges-java/left_join)
-* [Graph](./code-challanges-java/graph)
+* [Graph](./code-challenges-java/graph)
