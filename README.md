@@ -20,3 +20,4 @@
 * [Repeated Word](./code-challenges-java/repeated-word)
 * [Left Join](./code-challenges-java/left_join)
 * [Graph](./code-challenges-java/graph)
+* [Breadth First](./code-challenges-java/breadth_first_graph)
